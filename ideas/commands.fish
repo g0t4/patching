@@ -30,3 +30,6 @@ patch -o - < ideas/diff-u.patch
 patch -o - catalog.html ideas/diff-u.patch
 # IMO #   patch -o - catalog.html < ideas/diff-u.patch   # makes more sense, or even better:
 patch -o - -i ideas/diff-u.patch catalog.html   # -i arg for patch file
+
+# FYI
+patch [-F num]  # set fuzz factor, default=2 (applicable if diff has context lines) => can ignore up to this # of lines when matching hunks ... FYI if 3 lines of context and F=3 then that ignores the context when changing hunks
