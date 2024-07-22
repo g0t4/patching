@@ -10,7 +10,8 @@ patch catalog.html < ideas/diff-no-args.patch
 git status/diff # run after to show diff
 git reset hard --HEAD # undo for next test
 
-# unidiff (has filename embedded)
+# these patch files have filename in header so dont need name to patch
 patch < ideas/diff-u.patch
+patch < ideas/diff-c.patch
 
 
