@@ -23,3 +23,5 @@ patch catalog.html < ideas/diff-e.patch
 ./ideas/diff-e-to-ed.fish
 # ensure in dir above (not in ideas dir)
 
+# write to STDOUT
+patch -o - < ideas/diff-u.patch
