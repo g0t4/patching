@@ -8,4 +8,4 @@ diff -e catalog.html change-name/catalog.html > ideas/diff-e.patch
 # patching
 patch catalog.html < ideas/diff-no-args.patch
 git status/diff # run after to show diff
-
+git reset hard --HEAD # undo for next test
