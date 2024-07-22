@@ -1,0 +1,1 @@
+begin; diff -e before/catalog.html after/catalog.html; echo -e "w\nq\n"; end | ed catalog.html

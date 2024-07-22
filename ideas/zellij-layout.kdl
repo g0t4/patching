@@ -1,0 +1,25 @@
+layout {
+    tab {
+        pane split_direction="Vertical" {
+            pane split_direction="Horizontal" {
+                pane size="70%" {
+                    // todo how can I have this so user can exit ed and not have it relaunch? => go back to shell in that case
+                    command "fish"
+                    args "-c ed catalog.html"
+                    borderless true
+                    name "foo"
+                }
+                pane
+            }
+            pane split_direction="Horizontal" {
+                pane {
+                    command "fish"
+                    args "-c watch --no-title --color -- git diff --color"
+                    start_suspended true
+                }
+            }
+        }
+     // FYI must include tab or the entire config is the default_tab_template (new tabs repeat this then)
+    }
+}
+
