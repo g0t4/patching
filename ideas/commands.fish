@@ -25,3 +25,8 @@ patch catalog.html < ideas/diff-e.patch
 
 # write to STDOUT
 patch -o - < ideas/diff-u.patch
+
+# FYI can pass patch file after file to patch... 
+patch -o - catalog.html ideas/diff-u.patch
+# IMO #   patch -o - catalog.html < ideas/diff-u.patch   # makes more sense, or even better:
+patch -o - -i ideas/diff-u.patch catalog.html   # -i arg for patch file
