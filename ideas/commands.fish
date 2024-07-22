@@ -19,4 +19,7 @@ patch < ideas/diff-c.patch
 # edscript format
 patch catalog.html < ideas/diff-e.patch
 
+# pass to ed (w/ wq to write/save)
+./ideas/diff-e-to-ed.fish
+# ensure in dir above (not in ideas dir)
 
