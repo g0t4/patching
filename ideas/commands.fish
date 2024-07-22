@@ -13,5 +13,10 @@ git reset hard --HEAD # undo for next test
 # these patch files have filename in header so dont need name to patch
 patch < ideas/diff-u.patch
 patch < ideas/diff-c.patch
+# patch catalog.html < ideas/diff-u.patch    # also works
+#
+
+# edscript format
+patch catalog.html < ideas/diff-e.patch
 
 
