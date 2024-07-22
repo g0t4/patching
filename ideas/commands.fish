@@ -1,1 +1,1 @@
-sed -i "" 's/Higbee/McClure/' catalog.html
+sed -i '' 's/Higbee/Mcclure/g' catalog.html
