@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wes Higbee's Course Catalog</title>
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wes Higbee's Course Catalog</h1>
+        </header>
+
+        <nav class="filter-section">
+            <h2>Filter by Publisher:</h2>
+            <div id="publisher-filters"></div>
+            <div id="course-count"></div>
+        </nav>
+
+        <div class="sort-section">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+                <option value="date">Date (Newest First)</option>
+                <option value="title">Title (A-Z)</option>
+            </select>
+        </div>
+
+        <main id="course-grid" role="main"></main>
+    </div>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
