@@ -1,1 +1,1 @@
-sed -i '' 's/Higbee/Mcclure/g' catalog.html
+sed -i '' 's/Higbee/Mcclure/g' change-name/catalog.html
