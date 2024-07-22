@@ -1,1 +1,3 @@
-begin; diff -e before/catalog.html after/catalog.html; echo -e "w\nq\n"; end | ed catalog.html
+#!/usr/bin/env fish
+
+begin; diff -e catalog.html change-name/catalog.html; echo -e "w\nq\n"; end | ed catalog.html
